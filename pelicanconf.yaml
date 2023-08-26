@@ -1,0 +1,15 @@
+site:
+  name: Apache Bloodhound
+  description: The official website of Apache Bloodhound
+  domain: bloodhound.apache.org
+  logo: img/favicon.ico
+  repository: https://github.com/apache/bloodhound-site/
+  trademarks: Apache Bloodhound, Apache, and the Apache feather logo are trademarks of The Apache Software Foundation.
+
+theme: theme
+
+content:
+  static:
+    - css
+    - js
+    - img

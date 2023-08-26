@@ -1,0 +1,112 @@
+<html>
+  <head>
+	<title>Download Apache Bloodhound Sources</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/site.css" media="screen" />
+  </head>
+  <body>
+    [define version]0.8[end]
+    <div id="site-content" class="container">
+      <div class="row"><div class="container-box span8 offset2">
+        <div align="center">
+          <h1 style="position: relative;">Download Source Code</h1>
+        </div>
+        <div>
+          <p>Apache Bloodhound [version] is the latest release and the
+          recommended version for all users. When downloading the source package
+          you <strong>must</strong> verify the integrity of the downloaded files using the
+          signatures which are available from our main directory.</p>
+        </div>
+
+        <div id="mirror">
+          <h2>Mirror</h2>
+          <p>
+            [if-any logo]
+            <a href="[link]"><img align="right" src="[logo]" border="0"/></a>
+            [end]
+            The currently selected mirror is <strong>[preferred]</strong>.  If you
+            encounter a problem with this mirror, please select another mirror.
+            If all mirrors are failing, there are <i>backup</i> mirrors (at the
+            end of the mirrors list) that should be available.
+          </p>
+          <form action="[location]" method="get" id="SelectMirror">
+            Other mirrors: <select name="Preferred">
+              [if-any http]
+              [for http]<option value="[http]">[http]</option>[end]
+              [end]
+              [if-any ftp]
+              [for ftp]<option value="[ftp]">[ftp]</option>[end]
+              [end]
+              [if-any backup]
+              [for backup]<option value="[backup]">[backup] (backup)</option>[end]
+              [end]
+            </select>
+            <input type="submit" value="Change" />
+          </form>
+          <p>
+            You may also consult the <a href="https://www.apache.org/dyn/closer.cgi">complete list of mirrors</a>.
+          </p>    
+        </div>
+
+        <div id="releases">
+          <h2>Releases</h2>
+          <p>
+            Apache Bloodhound releases are provided as source code
+            distributions in tar.gz archive format. Windows users in
+            particular may find they need to download additional software to
+            extract the archive.
+          </p>
+
+          <div align="center">
+            <table class="table table-bordered">
+              <tr>
+                <th>Source Package</th>
+                <th>Signature</th>
+                <th>Checksum (MD5)</th>
+              </tr>
+              <tr>
+                <td><a href="[preferred]bloodhound/apache-bloodhound-[version].tar.gz">apache-bloodhound-[version].tar.gz</a></td>
+                <td>[<a href="https://www.apache.org/dist/bloodhound/apache-bloodhound-[version].tar.gz.asc">PGP</a>]</td>
+                <td>[<a href="https://www.apache.org/dist/bloodhound/apache-bloodhound-[version].tar.gz.md5">MD5</a>]</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="verifying">
+          <h2>Verifying the Integrity of Downloaded Files</h2>
+          <p>It is essential that you verify the integrity of the downloaded
+          files using the PGP signatures and/or file checksums. Please read
+          <a href="https://httpd.apache.org/dev/verification.html">Verifying Apache HTTP Server Releases</a> for
+          more information on why you should verify our releases.</p>
+          <p>The PGP signatures can be verified using PGP or GPG. First
+          download the <a href="https://people.apache.org/keys/group/bloodhound.asc">KEYS</a>
+          as well as the asc signature file for the particular distribution.
+          Make sure you get these files from the <a href="https://www.apache.org/dist/bloodhound/">main distribution directory</a>,
+          rather that from a mirror. Using GPG you can verify the signatures
+          as follows:</p>
+
+          <pre><code>$ gpg --import bloodhound.asc
+$ gpg --verify apache-bloodhound-[version].tar.gz.asc</code></pre>
+        </div>
+
+      </div></div>
+      <div class="row">
+        <footer class="span8 offset2" align="center">
+          <ul>
+				    <li><a href="https://www.apache.org/licenses/">License</a></li>
+    				<li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+    				<li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+    				<li><a href="https://www.apache.org/security/">Security</a></li>
+		    		<li><a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a></li>
+				    <li><a href="https://www.apache.org/">Apache Software Foundation</a></li>
+          </ul>
+          <p>Apache Bloodhound, Bloodhound, Apache, the Apache feather logo, and the Apache Bloodhound project logo are trademarks of The Apache Software Foundation.</p>
+          <p>All other marks mentioned may be trademarks or registered trademarks of their respective owners.</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
