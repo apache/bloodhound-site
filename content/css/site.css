@@ -42,7 +42,9 @@ ul.unstyled p {
 }
 
 .tweets blockquote {
-	margin-left: 10px;
+	margin-left: 1em;
+        border-left: 5px solid lightgray;
+        padding-left: 1em;
 }
 
 .highlight {
