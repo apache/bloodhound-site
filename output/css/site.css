@@ -1,0 +1,114 @@
+body {
+	background-color:  rgb(92%, 91%, 88%);
+}
+
+.container-box {
+	margin-top: 10px;
+	background-color: rgb(100%, 100%, 100%);
+	padding: 20px 20px;
+	border: 1px solid rgb(70%, 70%, 70%);
+	box-shadow: 0px 0px 10px 2px rgba(50%, 50%, 50%, 0.4);
+	border-radius: 7px;
+}
+
+.tm {
+	position: relative;
+	top: -0.5em;
+	font-size: 80%;
+	font-weight: 200;
+}
+
+.jumbotron {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.jumbotron h1 {
+	margin-bottom: 0;
+	font-size: 60px;
+	line-height: 1;
+	letter-spacing: -1px;
+	color: inherit;
+}
+
+.jumbotron p {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 27px;
+	color: inherit;
+}
+
+ul.unstyled p {
+	margin-left: 10px;
+}
+
+.highlight {
+	display: inline-block;
+	background-color: #f3f48e;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+.download-area {
+	margin-left: 20%;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+footer {
+	color: rgb(50%, 50%, 50%);
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	display: inline-block;
+	padding: 8px;
+}
+
+footer a:link {
+	color: rgb(70%, 25%, 25%);
+}
+
+footer a:visited {
+	color: rgb(45%, 25%, 25%);
+}
+
+footer p {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+@media (max-width: 480px) {
+	body {
+	  padding-left: 0px;
+	  padding-right: 0px;
+	}
+
+	.tm {
+		position: absolute;
+		top: 0em;
+		right: 0em;
+		font-size: 80%;
+		font-weight: 200;
+	}
+
+	.container-box {
+		border-width: 0px;
+		border-bottom-width: 1px;
+		margin-top: 0px;
+		padding: 15px; 
+		border-radius: 0px;
+	}
+
+	.jumbotron h1 {
+		font-size: 50px;
+	}
+
+	.download-area {
+	margin-left: 5%;
+}
+}
+
