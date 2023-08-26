@@ -41,6 +41,10 @@ ul.unstyled p {
 	margin-left: 10px;
 }
 
+.tweets blockquote {
+	margin-left: 10px;
+}
+
 .highlight {
 	display: inline-block;
 	background-color: #f3f48e;
