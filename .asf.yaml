@@ -1,11 +1,3 @@
-pelican:
-  target:       asf-site
-  whoami:       main
-
-github:
-  description:  "Apache Bloodhound Website Repository"
-  homepage:     https://bloodhound.apache.org/
-  labels:
-    - bloodhound
-    - website
-    - pelican
+staging:
+  profile: test
+  whoami:  asf-site
